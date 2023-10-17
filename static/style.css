@@ -1,0 +1,96 @@
+body{
+    padding-top:7rem;
+}
+.bg{
+    background-image: url("https://www.durhamnaturals.com/cdn/shop/files/Sider2_1920x669.png");
+    background-repeat: no-repeat;
+    background-size:contain;
+    position: relative;
+    
+    
+}
+.quote{
+    position:relative;
+    top: 10rem;
+    text-align:center;
+    font-family: 'Mohave', sans-serif;
+    font-size: 1.5rem;
+    color:darkgreen ;
+}
+#container{
+    position:relative;
+    bottom: 8rem;
+}
+
+.a{
+    position: relative;
+    top: 10rem;
+    text-align: center;
+    left: 50%;
+
+}
+.bg-color{
+    background-color:antiquewhite;
+}
+
+.vendor-reg{
+    position: absolute;
+    top:2.5rem;
+    right: 2rem;
+}
+.become-seller{
+    position: absolute;
+    top: 0.3rem;
+    right: 3.7rem;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    
+}
+.prodrec{
+    position: relative;
+   
+}
+.prodnew{
+    position: relative;
+    margin-top: 3rem;
+}
+.vendor-log{
+    position: absolute;
+    top:2.5rem;
+    right: 10rem;
+}
+.reg{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1rem;
+}
+
+.log{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1rem;
+}
+
+.navbut{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5rem;
+    
+}
+
+.divbrand{
+    position: absolute;
+    top: 1rem;
+    left:2rem;
+}
+.brand{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    font-size: xx-large;
+    color:goldenrod;
+}
+.search-form{
+    position: absolute;
+    right: 20rem;
+}
+p{
+    text-align: justify;
+}

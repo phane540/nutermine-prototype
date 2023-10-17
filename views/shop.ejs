@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" rel="stylesheet" href="/static/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mohave:wght@700&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/02a7620791.js" crossorigin="anonymous"></script>
+    
+
+</head>
+<body>
+
+
+
+    <!--                             NAVBAR                                                                  -->
+
+    <div class="container-fluid">
+        
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top p-3" data-bs-theme="light">
+            
+           
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav  me-auto mb-2 mb-lg-0">
+                   
+                    <a class="navbar-brand" href="/"><P class="brand mt-1">NUTUREMITE</P></a>
+                      
+                  <li class="nav-item">
+                   <button  class="btn btn-light">
+                    <a class="nav-link " aria-current="page" href="/"><p class="navbut">Home</p></a>
+                   </button> 
+                  </li>
+                  <li class="nav-item">
+                    <button class="btn btn-light">
+                        <a class="nav-link active" href="/shop"><p class="navbut">Shop</p></a>
+                    </button>
+                    
+                  </li>
+                  
+                  <li class="nav-item">
+                    <button class="btn btn-light">
+                        <a class="nav-link " href="/about"><p class="navbut">About</p></a>
+                    </button>
+                  </li>
+                  
+                  <li class="nav-item vendor-reg">
+                    <button class="btn btn-light">
+                        <a class="nav-link active" href="/register" ><p class="reg">Registration</p></a>
+                    </button>
+                  </li>
+                  <li class="nav-item vendor-log">
+                    <button class="btn btn-light">
+                        <a class="nav-link active" href="/login" ><p class="log">Login</p></a>
+                    </button>
+                  </li>
+                </ul>
+                
+              </div>
+
+          </nav>
+          <!-- <% if ( loggedIn) { %>
+            <a href="/dashboard">Go to Dashboard</a>
+          <% } %> -->
+    </div>
+
+
+    <div class="container mt-5">
+      <div class="row">
+          <% products.forEach(product => { %>
+              <div class="col-lg-4 col-md-6 mb-4">
+                  <div class="card h-100 shadow">
+                      <img class="card-img-top" src="<%= product.image_url %>" alt="Product Image">
+                      <div class="card-body">
+                          <h4 class="card-title"><%= product.name %></h4>
+                          <p class="card-text"><%= product.description %></p>
+                          <h5>$<%= product.price %></h5>
+                          
+                      </div>
+                      <div class="card-footer">
+                          <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+                      </div>
+                  </div>
+              </div>
+          <% }); %>
+      </div>
+  </div>
+  

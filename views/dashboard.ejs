@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seller Dashboard</title>
+    <link rel="stylesheet" rel="stylesheet" href="/static/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" >
+        <div class="container-fluid">
+          <a class="navbar-brand d-inline-flex focus-ring py-3 px-4 text-decoration-none border rounded-4 mb-0 bg-success h5" href="#">Seller Dashboard</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <button class="btn btn-primary m-3">
+                    <a class="nav-link active "  aria-current="page" href="#">Add product</a>
+                </button>
+              </li>
+              <li class="nav-item">
+                <button class="btn btn-primary m-3">
+                    <a class="nav-link" href="#">Product Sales</a>
+                </button>
+              </li>
+              <li class="nav-item">
+                <button class="btn btn-primary m-3">
+                    <a class="nav-link " href="#">Transactions</a>
+                </button>
+              </li>
+              <li class="nav-item">
+                <button class="btn btn-danger m-3">
+                    <a class="nav-link active" href="/logout">Logout</a>
+                </button>
+              
+              </li>
+              
+              
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    <div class="container mt-4">
+      
+        <form action="/dashboard" method="post" class="p-5 m-5">
+            <div class="mb-3">
+                <label for="productName" class="form-label">Product Name</label>
+                <input type="text" name="name" class="form-control" id="productName" required>
+            </div>
+            <div class="mb-3">
+                <label for="productDescription" class="form-label">Product Description</label>
+                <textarea class="form-control" name="description" id="productDescription" rows="3" required></textarea>
+            </div>
+            <div class="mb-3">
+                <label for="productPrice" class="form-label">Product Price</label>
+                <input type="number"  name="price" class="form-control" id="productPrice" required>
+            </div>
+            <!-- <div class="mb-3">
+                <label for="productPrice" class="form-label">Product image</label>
+                <input type="file"  name="productImage" class="form-control" id="productimage" required>
+            </div> -->
+            <button type="submit" class="btn btn-success">Add Product</button>
+        </form>
+    </div>
+<!--   
+    <div class="container mt-4">
+        <h2>My products</h2>
+        <h1>monitor your products</h1>
+        <div>
+            <% if (products.length > 0) { %>
+                <ul>
+                    <% products.forEach(product => { %>
+                        <li>
+                            <h3>Product Name: <%= product.name %></h3>
+                            <p>Description: <%= product.description %></p>
+                            <p>Price: <%= product.price %></p>
+                        </li>
+                    <% }); %>
+                </ul>
+            <% } else { %>
+                <p>No products found.</p>
+            <% } %>
+        </div>
+    </div> -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
