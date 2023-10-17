@@ -97,7 +97,7 @@ app.post('/register', async (req, res) => {
 app.post('/login', async (req, res) => {
    const { email, password } = req.body;
 
-   // Simple validation
+   
    if (!email || !password) {
        return res.status(400).json({ error: 'Please provide both email and password' });
    }
