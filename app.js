@@ -87,17 +87,8 @@ app.post("/register", async (req, res) => {
   }
 });
 
-<<<<<<< HEAD
 app.post("/login", async (req, res) => {
   const { email, password } = req.body;
-=======
-   
-   if (!email || !password) {
-       return res.status(400).json({ error: 'Please provide both email and password' });
-   }
->>>>>>> 6134a1e905791e6edfa6cfdf9a25fe681e23175e
-
-  // Simple validation
   if (!email || !password) {
     return res
       .status(400)
