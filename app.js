@@ -45,7 +45,7 @@ app.get("/register", requireLogout, function (req, res) {
 
 const mongoose = require("mongoose");
 const { Schema } = mongoose;
-const port = 3000;
+const port = 5000;
 
 const uri =
   "mongodb+srv://phanindra:phane123@phane.vzfskpy.mongodb.net/?retryWrites=true&w=majority";
