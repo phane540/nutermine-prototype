@@ -87,10 +87,11 @@ body{
     font-size: xx-large;
     color:goldenrod;
 }
-.search-form{
-    position: absolute;
-    right: 20rem;
-}
+/* .search-form{
+    position: relative;
+    right: 15rem;
+    
+} */
 p{
     text-align: justify;
 }
